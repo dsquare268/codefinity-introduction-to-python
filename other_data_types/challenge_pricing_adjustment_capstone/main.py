@@ -33,8 +33,9 @@ apples = grocery_inventory.get("Apples")
 
 if apples and apples[1] > 2:
     category, price, stock = apples
-    grocery_inventory.pop(["Apples"]) 
+    grocery_inventory.pop("Apples") 
     print("Apples removed from inventory due to high price.")
-else:
-    print("Updated inventory:", grocery_inventory)
+
+    
+print("Updated inventory:", grocery_inventory)
     
