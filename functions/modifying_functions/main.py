@@ -1,13 +1,9 @@
 #Define a function with a default `discount` argument 
 def apply_discount(price, discount=0.05):
-    discounted_price = price * (1 - discount)
-    #return discounted_price
     return price * (1-discount)
 
 # Function where `tax` has a default value
 def apply_tax(price, tax=0.07):
-    #total = price * (1 + tax) * (1 - discount)
-    #return total
     return price * (1 + tax)
 
 #Function where both 'discount' & 'tax' have default values
